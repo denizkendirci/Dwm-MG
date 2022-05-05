@@ -1,0 +1,19 @@
+# Brave Browser
+super + F1
+	brave
+
+# Sublime Editor
+super + F2
+	subl
+
+# Thunar File Manager
+super + F3
+	thunar
+
+# VLC Player
+super + F4
+	vlc
+
+# Rofi Menu
+super + shift + d
+	rofi -show drun

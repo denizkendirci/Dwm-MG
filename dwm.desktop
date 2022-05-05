@@ -1,0 +1,8 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=DWM
+Comment=Dynamic Window Manager
+Exec=/home/mortician/.config/dwm/autostart.sh
+Icon=dwm
+Type=XSession
+
