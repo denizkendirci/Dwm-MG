@@ -1,13 +1,10 @@
 #!/bin/bash
 
-# access root
-su
-
 # update the new installed system.
-pacman -Syyu
+sudo pacman -Syyu
 
 # install git and make
-pacman -S git make gcc
+sudo pacman -S make gcc
 
 # install paru from aur git link
 cd ..
@@ -36,13 +33,13 @@ git clone git://git.suckless.org/dwm
 git clone git://git.suckless.org/st
 git clone git://git.suckless.org/dmenu
 cd dmenu
-make clean install
+sudo make clean install
 cd ..
 cd st
-make clean install
+sudo make clean install
 cd ..
 cd dwm
-make clean install
+sudo make clean install
 cd /home/mortician
 
 # config.h - autostart.sh - picom.conf - sxhkdrc - .zshrc - dwm.desktop
@@ -50,23 +47,21 @@ cd /home/mortician
  
 cp /home/mortician/Dwm-MG/config.h /home/mortician/.config/dwm/config.h
 cd /home/mortician/.config/dwm/
-make clean install
+sudo make clean install
 cp /home/mortician/Dwm-MG/config.h /home/mortician/.config/dwm/autostart.sh
 chmod 755 autostart.sh
 cp /home/mortician/Dwm-MG/zshrc /home/mortician/.zshrc
 cd ..
 mkdir picom
-chown -R ./picom
 mkdir sxhkd
-chown -R ./sxhkd
 cp /home/mortician/Dwm-MG/picom.conf /home/mortician/.config/picom/picom.conf
 cp /home/mortician/Dwm-MG/sxhkdrc /home/mortician/.config/sxhkd/sxhkdrc
 cd /usr/share/
-mkdir xsessions
-cp /home/mortician/Dwm-MG/dwm.desktop /usr/share/xsessions/dwm.desktop
+sudo mkdir xsessions
+sudo cp /home/mortician/Dwm-MG/dwm.desktop /usr/share/xsessions/dwm.desktop
 
 # change default user shell to zsh
-su mortician
+
 echo "Enter user password to change shell"
 echo
 chsh -s /usr/bin/zsh
