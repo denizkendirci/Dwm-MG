@@ -53,7 +53,7 @@ cd /home/mortician/.config/dwm/
 make clean install
 cp /home/mortician/Dwm-MG/config.h /home/mortician/.config/dwm/autostart.sh
 chmod 755 autostart.sh
-cp /home/mortician/Dwm-MG/.zshrc /home/mortician/.zshrc
+cp /home/mortician/Dwm-MG/zshrc /home/mortician/.zshrc
 cd ..
 mkdir picom
 chown -R ./picom
