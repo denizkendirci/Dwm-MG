@@ -44,10 +44,10 @@ cd /home/mortician
 # config.h - autostart.sh - picom.conf - sxhkdrc - .zshrc - dwm.desktop
 # clone config files and autostart to home directory, and copy them to their places
  
-cp /home/mortician/Dwm-MG/config.h /home/mortician/.config/dwm/config.h
+sudo cp /home/mortician/Dwm-MG/config.h /home/mortician/.config/dwm/config.h
 cd /home/mortician/.config/dwm/
 sudo make clean install
-cp /home/mortician/Dwm-MG/config.h /home/mortician/.config/dwm/autostart.sh
+cp /home/mortician/Dwm-MG/autostart.sh /home/mortician/.config/dwm/autostart.sh
 chmod 755 autostart.sh
 cp /home/mortician/Dwm-MG/zshrc /home/mortician/.zshrc
 cd ..
