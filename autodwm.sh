@@ -73,5 +73,5 @@ chsh -s /usr/bin/zsh
 
 #reboot the system
 
-reboot
+sudo reboot
 
