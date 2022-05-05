@@ -8,6 +8,7 @@ sudo pacman -S make gcc
 
 # install paru from aur git link
 cd ..
+mkdir .config
 cd .config
 git clone https://aur.archlinux.org/paru.git
 cd paru
