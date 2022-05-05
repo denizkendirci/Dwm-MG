@@ -24,7 +24,7 @@ paru -S brave sublime-text-4 thunar tumblr vlc picom nitrogen alacritty rofi zsh
 
 # install and enable lightdm
 paru -S ly
-systemctl enable ly.service
+sudo systemctl enable ly.service
 
 # clone and compile dwm, st and dmenu
 cd .config
