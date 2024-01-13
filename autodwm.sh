@@ -21,7 +21,7 @@ cd ..
 paru -S xorg-server xorg-apps libx11 libxinerama libxft webkit2gtk xf86-video-intel nvidia optimus-manager bbswitch optimus-manager-qt
 
 # install browser, editor, file manager, video player etc.
-paru -S brave sublime-text-4 thunar tumblr vlc picom nitrogen alacritty rofi zsh neofetch sxhkd
+paru -S brave geany thunar tumbler vlc picom nitrogen alacritty rofi zsh neofetch sxhkd
 
 # install and enable lightdm
 paru -S ly
